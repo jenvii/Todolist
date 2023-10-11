@@ -7,7 +7,7 @@ export default function TodolistTable(props) {
                     <tr key={index}>
                         <td>{todo.date}</td>
                         <td>{todo.description}</td>
-                        <td><button onClick={() => props.deleteTodo(todo, index)}>Delete</button></td>
+                        <td><button onClick={() => props.deleteTodo(index)}>Delete</button></td>
                     </tr>
                 )}
             </tbody>

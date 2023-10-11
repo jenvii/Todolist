@@ -1,5 +1,7 @@
 import { useState } from "react"
-import TodolistTable from "./components/TodolistTable";
+/*import TodolistTable from "./components/TodolistTable";*/
+import TodolistGrid from "./components/TodolistGrid";
+
 
 export default function Todolist() {
 
@@ -14,8 +16,8 @@ export default function Todolist() {
         setTodos([...todos, todo]);
     }
 
-    const deleteTodo = (todo, index) => {
-        const updatedTodos = todos.filter((todo, i) => i !== index);
+    const deleteTodo = (index) => {
+        const updatedTodos = todos.filter((_, i) => i !== index);
         setTodos(updatedTodos);
     }
 
@@ -38,10 +40,11 @@ export default function Todolist() {
                 Add
             </button>
 
-            <TodolistTable todos={todos} deleteTodo={deleteTodo} />
+            <TodolistGrid todos={todos} deleteTodo={deleteTodo} />
 
         </>
     )
 
 }
+/*<TodolistTable todos={todos} deleteTodo={deleteTodo} />*/
 
