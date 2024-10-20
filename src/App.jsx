@@ -4,8 +4,6 @@ import Todolist from "./Todolist"
 import Home from "./components/Home";
 import { Tab, Tabs } from "@mui/material";
 
-
-//export default voi laittaa myös funktion eteen :)
 function App() {
 
   const [value, setValue] = useState('Home');

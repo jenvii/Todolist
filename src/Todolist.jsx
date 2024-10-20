@@ -1,5 +1,4 @@
 import { useState } from "react"
-/*import TodolistTable from "./components/TodolistTable";*/
 import TodolistGrid from "./components/TodolistGrid";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
@@ -7,7 +6,6 @@ import { LocalizationProvider } from '@mui/x-date-pickers';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs'
 import { DatePicker } from "@mui/x-date-pickers";
 import Stack from '@mui/material/Stack';
-import dayjs from "dayjs";
 
 
 export default function Todolist() {
@@ -60,5 +58,4 @@ export default function Todolist() {
     )
 
 }
-/*<TodolistTable todos={todos} deleteTodo={deleteTodo} />*/
 
